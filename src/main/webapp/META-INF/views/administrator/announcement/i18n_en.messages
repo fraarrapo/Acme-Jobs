@@ -1,0 +1,13 @@
+
+#administrator.announcement.list #################################################################
+administrator.announcement.list.label.title = Title
+administrator.announcement.list.label.moment = Creation Moment
+administrator.announcement.list.label.moreInfo = More Info
+administrator.announcement.list.label.text = Text
+
+#administrator.announcement.form #################################################################
+administrator.announcement.form.label.title = Title
+administrator.announcement.form.label.moment = Creation Moment
+administrator.announcement.form.label.moreInfo = MoreInfo
+administrator.announcement.form.label.text = Text
+administrator.announcement.form.button.return = Return

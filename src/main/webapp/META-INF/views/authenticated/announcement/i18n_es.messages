@@ -1,0 +1,12 @@
+#authenticated.announcement.list #################################################################
+authenticated.announcement.list.label.title = Título
+authenticated.announcement.list.label.moment = Momento de creación
+authenticated.announcement.list.label.moreInfo = Más Información
+authenticated.announcement.list.label.text = Texto
+
+#authenticated.announcement.form #################################################################
+authenticated.announcement.form.label.title = Título
+authenticated.announcement.form.label.moment = Momento de creación
+authenticated.announcement.form.label.moreInfo = Más Información
+authenticated.announcement.form.label.text = Texto
+authenticated.announcement.form.button.return = Volver

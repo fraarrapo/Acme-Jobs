@@ -1,0 +1,20 @@
+anonymous.companyrecord.list.label.name = Nombre
+anonymous.companyrecord.list.label.sector = Sector
+anonymous.companyrecord.list.label.nameCEO = Nombre del CEO
+anonymous.companyrecord.list.label.description = Descripción
+anonymous.companyrecord.list.label.website = Web
+anonymous.companyrecord.list.label.phone = Teléfono
+anonymous.companyrecord.list.label.email = Email
+anonymous.companyrecord.list.label.incorporated = INC
+anonymous.companyrecord.list.label.rating = Valoración
+
+anonymous.companyrecord.form.label.name = Nombre
+anonymous.companyrecord.form.label.sector = Sector
+anonymous.companyrecord.form.label.nameCEO = Nombre del CEO
+anonymous.companyrecord.form.label.description = Descripción
+anonymous.companyrecord.form.label.website = Web
+anonymous.companyrecord.form.label.phone = Teléfono
+anonymous.companyrecord.form.label.email = Email
+anonymous.companyrecord.form.label.incorporated = INC
+anonymous.companyrecord.form.label.rating = Valoración
+anonymous.companyrecord.form.button.return = Volver

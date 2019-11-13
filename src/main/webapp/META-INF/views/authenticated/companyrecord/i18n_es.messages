@@ -1,0 +1,20 @@
+autheticated.companyrecord.list.label.name = Nombre
+autheticated.companyrecord.list.label.sector = Sector
+autheticated.companyrecord.list.label.nameCEO = Nombre del CEO
+autheticated.companyrecord.list.label.description = Descripción
+autheticated.companyrecord.list.label.website = Web
+autheticated.companyrecord.list.label.phone = Teléfono
+autheticated.companyrecord.list.label.email = Email
+autheticated.companyrecord.list.label.incorporated = INC
+autheticated.companyrecord.list.label.rating = Valoración
+
+autheticated.companyrecord.form.label.name = Nombre
+autheticated.companyrecord.form.label.sector = Sector
+autheticated.companyrecord.form.label.nameCEO = Nombre del CEO
+autheticated.companyrecord.form.label.description = Descripción
+autheticated.companyrecord.form.label.website = Web
+autheticated.companyrecord.form.label.phone = Teléfono
+autheticated.companyrecord.form.label.email = Email
+autheticated.companyrecord.form.label.incorporated = INC
+autheticated.companyrecord.form.label.rating = Valoración
+autheticated.companyrecord.form.button.return = Volver

@@ -1,0 +1,12 @@
+#anonymous.investorrecord.list #################################################################
+anonymous.investorrecord.list.label.name = Nombre
+anonymous.investorrecord.list.label.sector = Sector
+anonymous.investorrecord.list.label.statement = Declaración
+anonymous.investorrecord.list.label.stars = Estrellas
+
+#anonymous.investorrecord.form #################################################################
+anonymous.investorrecord.form.label.name = Nombre
+anonymous.investorrecord.form.label.sector = Sector
+anonymous.investorrecord.form.label.statement = Declaración
+anonymous.investorrecord.form.label.stars = Estrellas
+anonymous.investorrecord.form.button.return = Volver

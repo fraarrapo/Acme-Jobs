@@ -1,0 +1,13 @@
+
+#authenticated.announcement.list #################################################################
+authenticated.announcement.list.label.title = Title
+authenticated.announcement.list.label.moment = Creation Moment
+authenticated.announcement.list.label.moreInfo = More Info
+authenticated.announcement.list.label.text = Text
+
+#authenticated.announcement.form #################################################################
+authenticated.announcement.form.label.title = Title
+authenticated.announcement.form.label.moment = Creation Moment
+authenticated.announcement.form.label.moreInfo = MoreInfo
+authenticated.announcement.form.label.text = Text
+authenticated.announcement.form.button.return = Return

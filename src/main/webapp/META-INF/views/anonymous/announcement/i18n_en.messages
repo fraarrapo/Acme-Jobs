@@ -1,0 +1,13 @@
+
+#anonymous.announcement.list #################################################################
+anonymous.announcement.list.label.title = Title
+anonymous.announcement.list.label.moment = Creation Moment
+anonymous.announcement.list.label.moreInfo = More Info
+anonymous.announcement.list.label.text = Text
+
+#anonymous.announcement.form #################################################################
+anonymous.announcement.form.label.title = Title
+anonymous.announcement.form.label.moment = Creation Moment
+anonymous.announcement.form.label.moreInfo = MoreInfo
+anonymous.announcement.form.label.text = Text
+anonymous.announcement.form.button.return = Return

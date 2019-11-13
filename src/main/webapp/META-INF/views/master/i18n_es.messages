@@ -61,6 +61,7 @@ master.menu.administrator.adminDisplay = Display de Administrador
 master.menu.administrator.dashboard = Panel de control
 master.menu.administrator.customParams = Parámetros de Customización
 master.menu.administrator.announcements.list = Anuncios (ADMIN)
+master.menu.administrator.announcements.create = Crear Announcements (ADMIN)
 
 # master.menu.anonymous.announcements #######################################################
 master.menu.anonymous.announcements.list = Lista de Anuncios

@@ -11,3 +11,6 @@ administrator.announcement.form.label.moment = Creation Moment
 administrator.announcement.form.label.moreInfo = MoreInfo
 administrator.announcement.form.label.text = Text
 administrator.announcement.form.button.return = Return
+administrator.announcement.form.button.update = Update
+administrator.announcement.form.button.create = Create
+administrator.announcement.form.button.delete = Delete

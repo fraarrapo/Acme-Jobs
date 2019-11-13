@@ -44,7 +44,6 @@
 	
         
 		<acme:menu-option code="master.menu.administrator.adminDisplay" access="hasRole('Administrator')">
-		<acme:menu-suboption code="master.menu.administrator.announcements.list" action="/administrator/announcement/list"/>
 		<acme:menu-suboption code="master.menu.administrator.dashboard" action="/administrator/dashboard/list"/>
 		<acme:menu-suboption code="master.menu.administrator.customParams" action="/administrator/custom-params/list"/>
 		</acme:menu-option>
@@ -53,6 +52,10 @@
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.announcements.list" action="/administrator/announcement/list"/>
+			<acme:menu-suboption code="master.menu.administrator.announcements.create" action="/administrator/announcement/create"/>
+			
 		</acme:menu-option>
 		
 	

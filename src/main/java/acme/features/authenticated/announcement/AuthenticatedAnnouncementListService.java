@@ -1,7 +1,10 @@
 
 package acme.features.authenticated.announcement;
 
+import java.util.Calendar;
 import java.util.Collection;
+import java.util.Date;
+import java.util.TimeZone;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -39,7 +42,10 @@ public class AuthenticatedAnnouncementListService implements AbstractListService
 	public Collection<Announcement> findMany(final Request<Announcement> request) {
 		assert request != null;
 		Collection<Announcement> result;
-		result = this.repository.findManyLessThanOneMonth();
+		Calendar cal = Calendar.getInstance(TimeZone.getDefault());
+		cal.add(Calendar.MONTH, -1);
+		Date ldt = cal.getTime();
+		result = this.repository.findManyLessThanOneMonth(ldt);
 		return result;
 	}
 }

@@ -76,8 +76,8 @@
         `name` varchar(255),
         `nameceo` varchar(255),
         `phone` varchar(255),
-        `rating` integer,
         `sector` varchar(255),
+        `stars` integer,
         `website` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
@@ -151,7 +151,7 @@
         `description` varchar(255),
         `reward_amount` double precision,
         `reward_currency` varchar(255),
-        `ticket` varchar(255),
+        `ticker` varchar(255),
         `title` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
@@ -178,7 +178,7 @@
        add constraint UK_iex7e8fs0fh89yxpcnm1orjkm unique (`ticker`);
 
     alter table `request` 
-       add constraint UK_poov41qoyq0n88wyfx5ayajt4 unique (`ticket`);
+       add constraint UK_9mxq3powq8tqctclj0fbi2nih unique (`ticker`);
 
     alter table `user_account` 
        add constraint UK_castjbvpeeus0r8lbpehiu0e4 unique (`username`);

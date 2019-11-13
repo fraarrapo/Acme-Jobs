@@ -1,7 +1,7 @@
 
 package acme.features.administrator.customParams;
 
-import java.util.Collection;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -10,10 +10,10 @@ import acme.entities.customParams.Configuration;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Administrator;
-import acme.framework.services.AbstractListService;
+import acme.framework.services.AbstractShowService;
 
 @Service
-public class AdministratorConfigurationListService implements AbstractListService<Administrator, Configuration> {
+public class AdministratorConfigurationShowService implements AbstractShowService<Administrator, Configuration> {
 
 	@Autowired
 	AdministratorConfigurationRepository repository;
@@ -27,6 +27,7 @@ public class AdministratorConfigurationListService implements AbstractListServic
 
 	@Override
 	public void unbind(final Request<Configuration> request, final Configuration entity, final Model model) {
+
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -36,12 +37,14 @@ public class AdministratorConfigurationListService implements AbstractListServic
 	}
 
 	@Override
-	public Collection<Configuration> findMany(final Request<Configuration> request) {
+	public Configuration findOne(final Request<Configuration> request) {
 		assert request != null;
-		Collection<Configuration> result;
-		result = this.repository.findMany();
+		List<String> consulta;
+		consulta = this.repository.findMany();
+		Configuration result = new Configuration();
+		result.setSpamWords(consulta.get(0));
+		result.setSpamThreshold(new Double(consulta.get(1)));
 		return result;
-
 	}
 
 }

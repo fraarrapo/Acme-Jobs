@@ -9,6 +9,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 
@@ -31,20 +32,23 @@ public class Request extends DomainEntity {
 
 	@Temporal(TemporalType.TIMESTAMP)
 	@Past
+	@NotNull
 	private Date				creationMoment;
 
 	@Temporal(TemporalType.TIMESTAMP)
+	@NotNull
 	private Date				deadline;
 
 	@NotBlank
 	private String				description;
 
 	@Valid
+	@NotNull
 	private Money				reward;
 
 	@NotBlank
 	@Pattern(regexp = "^R[a-zA-Z]{4}-[0-9]{5}$")
 	@Column(unique = true)
-	private String				ticket;
+	private String				ticker;
 
 }

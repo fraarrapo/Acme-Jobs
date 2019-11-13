@@ -26,7 +26,7 @@
 			<property name="phone" value="+4 9999999999" />
 			<property name="email" value="anom@gmail.es" />
 			<property name="incorporated" value="true" />
-			<property name="rating" value="5" />
+			<property name="stars" value="5" />
 		
 		</bean>
 		
@@ -39,7 +39,7 @@
 			<property name="phone" value="(9979) 999998" />
 			<property name="email" value="anoma@gmail.es" />
 			<property name="incorporated" value="false" />
-			<property name="rating" value="5" />
+			<property name="stars" value="5" />
 		
 		</bean>
 		
@@ -52,7 +52,7 @@
 			<property name="phone" value="99992319" />
 			<property name="email" value="anomb@gmail.es" />
 			<property name="incorporated" value="true" />
-			<property name="rating" value="5" />
+			<property name="stars" value="5" />
 		
 		</bean>
   
@@ -126,7 +126,7 @@
 		<property name="deadline" value="2020/01/20 23:30"/>
 		<property name="description" value="This is request 1"/>
 		<property name="reward" value="1000.0 euros"/>
-		<property name="ticket" value="Rabcd-01000"/>
+		<property name="ticker" value="Rabcd-01000"/>
 	</bean>
 	
 	<bean id="request02" class="acme.entities.requests.Request">
@@ -135,7 +135,7 @@
 		<property name="deadline" value="2020/01/25 23:30"/>
 		<property name="description" value="This is request 2"/>
 		<property name="reward" value="2500.0 euros"/>
-		<property name="ticket" value="RAbCd-01001"/>
+		<property name="ticker" value="RAbCd-01001"/>
 	</bean>
 	
 	<bean id="request03" class="acme.entities.requests.Request">
@@ -144,7 +144,7 @@
 		<property name="deadline" value="2020/01/30 23:30"/>
 		<property name="description" value="This is request 3"/>
 		<property name="reward" value="5000.0 euros"/>
-		<property name="ticket" value="RABCD-01002"/>
+		<property name="ticker" value="RABCD-01002"/>
 	</bean>
 	
 

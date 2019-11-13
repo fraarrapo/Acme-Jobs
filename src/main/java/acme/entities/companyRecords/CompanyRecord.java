@@ -28,6 +28,7 @@ public class CompanyRecord extends DomainEntity {
 	@NotBlank
 	private String				name;
 
+	@NotBlank
 	private String				sector;
 
 	@NotBlank
@@ -41,7 +42,6 @@ public class CompanyRecord extends DomainEntity {
 	private String				website;
 
 	@NotBlank
-
 	@Pattern(regexp = "^(\\+[0-9]{1,3}\\s)?(\\([0-9]{1,4}\\)\\s)?[0-9]{6,10}$")
 	private String				phone;
 
@@ -53,6 +53,6 @@ public class CompanyRecord extends DomainEntity {
 
 	@Min(0)
 	@Max(5)
-	private Integer				rating;
+	private Integer				stars;
 
 }

@@ -1,0 +1,15 @@
+#administrator.investorrecord.list #################################################################
+administrator.investorrecord.list.label.name = Name
+administrator.investorrecord.list.label.sector = Sector
+administrator.investorrecord.list.label.statement = Statement
+administrator.investorrecord.list.label.stars = Stars
+
+#administrator.investorrecord.form #################################################################
+administrator.investorrecord.form.label.name = Name 
+administrator.investorrecord.form.label.sector = Sector
+administrator.investorrecord.form.label.statement = Statement
+administrator.investorrecord.form.label.stars = Stars
+administrator.investorrecord.form.button.return = Return
+administrator.investorrecord.form.button.update = Update
+administrator.investorrecord.form.button.delete = Delete
+administrator.investorrecord.form.button.create = Create

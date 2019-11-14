@@ -63,10 +63,8 @@ public class AdministratorChallengeCreateService implements AbstractCreateServic
 		assert errors != null;
 
 		Date date = new Date();
-
-		if (entity.getDeadline().before(date)) {
-			errors.add("deadline", "administrator.challenges.error.create");
-		}
+		boolean esAntes = entity.getDeadline().before(date);
+		errors.state(request, !esAntes, "deadline", "administrator.challenge.error.deadline");
 	}
 
 	@Override

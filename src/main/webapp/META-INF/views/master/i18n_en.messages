@@ -60,6 +60,8 @@ master.menu.administrator.adminDisplay = Admin Display
 master.menu.administrator.dashboard = Dashboard
 master.menu.administrator.customParams = Customisation Parameters
 master.menu.administrator.announcements.list = Announcements (ADMIN)
+master.menu.administrator.challenge.list = Challenges' list (ADMIN)
+master.menu.administrator.challenge.create = Create challenge
 
 
 # master.menu.anonymous.announcements #######################################################s

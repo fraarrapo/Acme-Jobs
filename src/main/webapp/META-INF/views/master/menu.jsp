@@ -46,10 +46,14 @@
 		<acme:menu-option code="master.menu.administrator.adminDisplay" access="hasRole('Administrator')">
 		<acme:menu-suboption code="master.menu.administrator.dashboard" action="/administrator/dashboard/list"/>
 		<acme:menu-suboption code="master.menu.administrator.customParams" action="/administrator/custom-params/list"/>
+
 		</acme:menu-option>
     
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.investorRecord.list" action="/administrator/investor-record/list"/>
+			<acme:menu-suboption code="master.menu.administrator.investorRecord.create" action="/administrator/investor-record/create"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>
 			<acme:menu-separator/>

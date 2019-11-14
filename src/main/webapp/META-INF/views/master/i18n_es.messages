@@ -61,7 +61,9 @@ master.menu.administrator.adminDisplay = Display de Administrador
 master.menu.administrator.dashboard = Panel de control
 master.menu.administrator.customParams = Parámetros de Customización
 master.menu.administrator.announcements.list = Anuncios (ADMIN)
-master.menu.administrator.announcements.create = Crear Announcements (ADMIN)
+master.menu.administrator.challenge.list = Retos (ADMIN)
+master.menu.administrator.challenge.create = Crear reto
+master.menu.administrator.announcements.create = Crear Anuncios (ADMIN)
 master.menu.administrator.investorRecord.list = Lista de registro de inversores
 master.menu.administrator.investorRecord.create = Crear una lista de inversores
 

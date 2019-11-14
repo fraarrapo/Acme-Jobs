@@ -39,12 +39,9 @@ public class AdministratorConfigurationShowService implements AbstractShowServic
 	@Override
 	public Configuration findOne(final Request<Configuration> request) {
 		assert request != null;
-		List<String> consulta;
-		consulta = this.repository.findMany();
-		Configuration result = new Configuration();
-		result.setSpamWords(consulta.get(0));
-		result.setSpamThreshold(new Double(consulta.get(1)));
-		return result;
+		List<Configuration> temp = (List<Configuration>) this.repository.findMany();
+		Configuration res = temp.get(0);
+		return res;
 	}
 
 }

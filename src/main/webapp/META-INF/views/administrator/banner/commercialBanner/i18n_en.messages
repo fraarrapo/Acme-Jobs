@@ -1,0 +1,15 @@
+
+#administrator.commercialBanner.list #################################################################
+administrator.commercialBanner.list.label.slogan = Slogan
+administrator.commercialBanner.list.label.imageurl = Image URL
+
+#administrator.commercialBanner.form #################################################################
+administrator.commercialBanner.form.label.slogan = Slogan
+administrator.commercialBanner.form.label.imageurl = Image URL
+administrator.commercialBanner.form.label.targeturl = Target URL
+administrator.commercialBanner.form.label.creditcard = Credit Card
+	
+administrator.commercialBanner.form.button.create = Create
+administrator.commercialBanner.form.button.update = Update
+administrator.commercialBanner.form.button.delete = Delete
+administrator.commercialBanner.form.button.return = Return

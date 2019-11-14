@@ -16,4 +16,4 @@ administrator.challenge.form.button.create = Crear
 administrator.challenge.form.button.update = Actualizar
 administrator.challenge.form.button.delete = Borrar
 
-administrator.challenges.error.create = La fecha límite debe ser posterior a la actual
+administrator.challenge.error.deadline = La fecha límite debe ser posterior a la actual

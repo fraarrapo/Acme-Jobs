@@ -45,6 +45,7 @@
         
 		<acme:menu-option code="master.menu.administrator.adminDisplay" access="hasRole('Administrator')">
 		<acme:menu-suboption code="master.menu.administrator.dashboard" action="/administrator/dashboard/list"/>
+		<acme:menu-suboption code="master.menu.administrator.customParams" action="/administrator/custom-params/show"/>
 		<acme:menu-suboption code="master.menu.administrator.customParams" action="/administrator/custom-params/list"/>
 
 		</acme:menu-option>

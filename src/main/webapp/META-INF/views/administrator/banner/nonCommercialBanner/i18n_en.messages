@@ -1,0 +1,13 @@
+
+#administrator.nonCommercialBanner.list #################################################################
+administrator.nonCommercialBanner.list.label.slogan = Slogan
+administrator.nonCommercialBanner.list.label.targeturl = Target URL
+
+#administrator.nonCommercialBanner.form #################################################################
+administrator.nonCommercialBanner.form.label.slogan = Slogan
+administrator.nonCommercialBanner.form.label.imageurl = Image URL
+administrator.nonCommercialBanner.form.label.targeturl = Target URL
+administrator.nonCommercialBanner.form.label.jingleurl = Jingle URL
+	
+administrator.nonCommercialBanner.form.button.create = Create
+administrator.nonCommercialBanner.form.button.return = Return

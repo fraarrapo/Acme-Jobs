@@ -81,6 +81,12 @@ master.menu.administrator.companyrecord.create = Crear Company Record
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
 
+master.menu.administrator.commercialBanner.list = Commercial Banner List
+master.menu.administrator.commercialBanner.create = Commercial Banner Create
+
+master.menu.administrator.nonCommercialBanner.list = Non Commercial Banner List
+master.menu.administrator.nonCommercialBanner.create = Non Commercial Banner Create
+
 # master.menu.provider ########################################################
 
 master.menu.provider = Provider

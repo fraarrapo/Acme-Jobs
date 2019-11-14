@@ -76,6 +76,8 @@ master.menu.authenticated.announcements.list = Lista de Anuncios
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
+master.menu.administrator.companyrecord.list = Company Records
+master.menu.administrator.companyrecord.create = Create Company Record
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
 

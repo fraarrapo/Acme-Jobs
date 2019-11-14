@@ -60,8 +60,11 @@ master.menu.administrator.adminDisplay = Admin Display
 master.menu.administrator.dashboard = Dashboard
 master.menu.administrator.customParams = Customisation Parameters
 master.menu.administrator.announcements.list = Announcements (ADMIN)
-master.menu.administrator.challenge.list = Challenges' list (ADMIN)
-master.menu.administrator.challenge.create = Create challenge
+master.menu.administrator.challenge.list = Challenges (ADMIN)
+master.menu.administrator.challenge.create = Create Challenge
+master.menu.administrator.announcements.create = Create Announcement (ADMIN)
+master.menu.administrator.investorRecord.list = Investors
+master.menu.administrator.investorRecord.create = Create Investor
 
 
 # master.menu.anonymous.announcements #######################################################s

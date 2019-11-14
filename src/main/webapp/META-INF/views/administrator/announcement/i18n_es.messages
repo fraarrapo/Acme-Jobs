@@ -10,3 +10,6 @@ administrator.announcement.form.label.moment = Momento de creación
 administrator.announcement.form.label.moreInfo = Más Información
 administrator.announcement.form.label.text = Texto
 administrator.announcement.form.button.return = Volver
+administrator.announcement.form.button.update = Actualizar
+administrator.announcement.form.button.create = Crear
+administrator.announcement.form.button.delete = Borrar

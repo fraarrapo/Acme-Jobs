@@ -1,0 +1,15 @@
+#administrator.investorrecord.list #################################################################
+administrator.investorrecord.list.label.name = Nombre
+administrator.investorrecord.list.label.sector = Sector
+administrator.investorrecord.list.label.statement = Declaración
+anonyadministratormous.investorrecord.list.label.stars = Estrellas
+
+#administrator.investorrecord.form #################################################################
+administrator.investorrecord.form.label.name = Nombre
+administrator.investorrecord.form.label.sector = Sector
+administrator.investorrecord.form.label.statement = Declaración
+administrator.investorrecord.form.label.stars = Estrellas
+administrator.investorrecord.form.button.return = Volver
+administrator.investorrecord.form.button.update = Editar
+administrator.investorrecord.form.button.delete = Borrar
+administrator.investorrecord.form.button.create = Crear

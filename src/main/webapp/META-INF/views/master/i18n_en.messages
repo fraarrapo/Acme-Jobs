@@ -60,6 +60,10 @@ master.menu.administrator.adminDisplay = Admin Display
 master.menu.administrator.dashboard = Dashboard
 master.menu.administrator.customParams = Customisation Parameters
 master.menu.administrator.announcements.list = Announcements (ADMIN)
+master.menu.administrator.announcements.create = Create Announcements (ADMIN)
+master.menu.administrator.investorRecord.list = Investor List
+master.menu.administrator.investorRecord.create = Investor Create
+
 
 
 # master.menu.anonymous.announcements #######################################################s

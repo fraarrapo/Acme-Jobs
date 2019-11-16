@@ -9,11 +9,8 @@
 # they accept any liabilities with respect to them.
 
 authenticated.offer.list.label.title = Title
-authenticated.offer.list.label.creationmoment = Creation Moment
 authenticated.offer.list.label.deadline = Deadline
-authenticated.offer.list.label.text = Text
-authenticated.offer.list.label.money = Money
-authenticated.offer.list.label.code = Code
+
 
 authenticated.offer.form.label.title = Title
 authenticated.offer.form.label.creationmoment = Creation moment
@@ -21,7 +18,8 @@ authenticated.offer.form.label.deadline = Deadline
 authenticated.offer.form.label.text = Text
 authenticated.offer.form.label.moneyMin = Min Reward
 authenticated.offer.form.label.moneyMax = Max Reward
-
 authenticated.offer.form.label.ticker = Ticker
 
+
+authenticated.offer.form.button.create = Create
 authenticated.offer.form.button.return = Return

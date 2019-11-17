@@ -21,7 +21,7 @@
 	<acme:form-textbox code="authenticated.request.form.label.deadline" path="deadline"/>
 	<acme:form-textbox code="authenticated.request.form.label.description" path="description"/>
 	<acme:form-textbox code="authenticated.request.form.label.reward" path="reward"/>
-	<acme:form-textbox code="authenticated.request.form.label.ticket" path="ticket"/>
+	<acme:form-textbox code="authenticated.request.form.label.ticker" path="ticker"/>
 	
 	<acme:form-return code="authenticated.provider.form.button.return"/>
 </acme:form>

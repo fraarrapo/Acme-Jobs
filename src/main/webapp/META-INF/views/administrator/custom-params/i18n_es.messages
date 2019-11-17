@@ -2,3 +2,4 @@
 #administrator.announcement.list #################################################################
 administrator.customparams.list.label.spamWords = Palabras de Spam
 administrator.customparams.list.label.spamThreshold = Spam Threshold
+administrator.configuration.form.button.update = Actualizar

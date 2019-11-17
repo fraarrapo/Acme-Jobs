@@ -18,7 +18,7 @@
 
 <tiles-definitions>
 
-	<definition name="administrator/configuration/list" extends="master">
-		<put-attribute name="body" type="template" value="../administrator/custom-params/list.jsp" />
+	<definition name="administrator/configuration/form" extends="master">
+		<put-attribute name="body" type="template" value="../administrator/custom-params/form.jsp" />
 	</definition>
 </tiles-definitions>

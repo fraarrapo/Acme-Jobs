@@ -61,6 +61,11 @@ master.menu.administrator.adminDisplay = Display de Administrador
 master.menu.administrator.dashboard = Panel de control
 master.menu.administrator.customParams = Parámetros de Customización
 master.menu.administrator.announcements.list = Anuncios (ADMIN)
+master.menu.administrator.challenge.list = Retos (ADMIN)
+master.menu.administrator.challenge.create = Crear reto
+master.menu.administrator.announcements.create = Crear Anuncios (ADMIN)
+master.menu.administrator.investorRecord.list = Lista de registro de inversores
+master.menu.administrator.investorRecord.create = Crear una lista de inversores
 
 # master.menu.anonymous.announcements #######################################################
 master.menu.anonymous.announcements.list = Lista de Anuncios
@@ -71,13 +76,22 @@ master.menu.authenticated.announcements.list = Lista de Anuncios
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
+master.menu.administrator.companyrecord.list = Company Records
+master.menu.administrator.companyrecord.create = Create Company Record
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
+
+master.menu.administrator.commercialBanner.list = Lista Banners Comerciales
+master.menu.administrator.commercialBanner.create = Crear Banner Comercial
+
+master.menu.administrator.nonCommercialBanner.list = Lista Banners No Comerciales
+master.menu.administrator.nonCommercialBanner.create = Crear Banner No Comercial
 
 # master.menu.provider ########################################################
 
 master.menu.provider = Proveedor
 master.menu.provider.favourite-link = Enlace favorito
+master.menu.provider.request = Crear petición
 
 # master.menu.consumer ##########################################################
 

@@ -60,6 +60,11 @@ master.menu.administrator.adminDisplay = Admin Display
 master.menu.administrator.dashboard = Dashboard
 master.menu.administrator.customParams = Customisation Parameters
 master.menu.administrator.announcements.list = Announcements (ADMIN)
+master.menu.administrator.challenge.list = Challenges (ADMIN)
+master.menu.administrator.challenge.create = Create Challenge
+master.menu.administrator.announcements.create = Create Announcement (ADMIN)
+master.menu.administrator.investorRecord.list = Investors
+master.menu.administrator.investorRecord.create = Create Investor
 
 
 # master.menu.anonymous.announcements #######################################################s
@@ -71,13 +76,22 @@ master.menu.authenticated.announcements.list = List Announcements
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
+master.menu.administrator.companyrecord.list = Company Records
+master.menu.administrator.companyrecord.create = Crear Company Record
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
+
+master.menu.administrator.commercialBanner.list = Commercial Banner List
+master.menu.administrator.commercialBanner.create = Commercial Banner Create
+
+master.menu.administrator.nonCommercialBanner.list = Non Commercial Banner List
+master.menu.administrator.nonCommercialBanner.create = Non Commercial Banner Create
 
 # master.menu.provider ########################################################
 
 master.menu.provider = Provider
 master.menu.provider.favourite-link = Favourite link
+master.menu.provider.request = Create request
 
 # master.menu.authenticated.challenge #######################################################
 

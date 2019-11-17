@@ -104,6 +104,7 @@ master.menu.authenticated.offer.list= List Offers
 
 master.menu.consumer = Consumer
 master.menu.consumer.favourite-link = Favourite link
+master.menu.consumer.offer.create = Create Offer
 
 # master.menu.user-account ####################################################
 

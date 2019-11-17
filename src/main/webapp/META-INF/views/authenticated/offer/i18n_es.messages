@@ -9,11 +9,8 @@
 # they accept any liabilities with respect to them.
 
 authenticated.offer.list.label.title = Título
-authenticated.offer.list.label.creationmoment = Momento de creación
 authenticated.offer.list.label.deadline = Fin de la oferta
-authenticated.offer.list.label.text = Texto
-authenticated.offer.list.label.money = Dinero
-authenticated.offer.list.label.code = Código
+
 
 authenticated.offer.form.label.title = Título
 authenticated.offer.form.label.creationmoment = Momento de creación
@@ -22,6 +19,8 @@ authenticated.offer.form.label.text = Texto
 authenticated.offer.form.label.moneyMin = Min Recompensa
 authenticated.offer.form.label.moneyMax = Max Recompensa
 
+
 authenticated.offer.form.label.ticker = Ticker
 
+authenticated.offer.form.button.create = Crear
 authenticated.offer.form.button.return = Volver

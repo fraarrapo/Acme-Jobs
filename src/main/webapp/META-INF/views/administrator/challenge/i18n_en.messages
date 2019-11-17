@@ -1,0 +1,19 @@
+administrator.challenge.list.label.title = Title
+administrator.challenge.list.label.description = Description
+
+administrator.challenge.form.label.title = Title
+administrator.challenge.form.label.description = Description
+administrator.challenge.form.label.goalsgold = Gold goal
+administrator.challenge.form.label.goalssilver = Silver goal
+administrator.challenge.form.label.goalsbronze = Bronze goal
+administrator.challenge.form.label.rewardsgold = Gold reward
+administrator.challenge.form.label.rewardssilver = Silver reward
+administrator.challenge.form.label.rewardsbronze = Bronze reward
+administrator.challenge.form.label.deadline = Deadline
+administrator.challenge.form.label.return = Return
+
+administrator.challenge.form.button.create = Create
+administrator.challenge.form.button.update = Update
+administrator.challenge.form.button.delete = Delete
+
+administrator.challenge.error.deadline = Deadline must be after actual date

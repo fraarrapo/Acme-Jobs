@@ -50,22 +50,16 @@ master.menu.authenticated.list.companyrecord = Lista de Registros de compañias
 
 # master.menu.anonymous.investorRecord #######################################################
 
-master.menu.anonymous.investorRecord.list = Lista de Registros de inversionistas
-master.menu.anonymous.top.investorRecord = Top de Registros de inversionistas
+master.menu.anonymous.investorRecord.list = Lista de Registros de inversores
+master.menu.anonymous.top.investorRecord = Top de Registros de inversores
 
 # master.menu.authenticated.investorRecord #######################################################
-master.menu.authenticated.investorRecord.list = Lista de Registros de inversionistas
+master.menu.authenticated.investorRecord.list = Lista de Registros de inversores
 
 # master.menu.administrator.Display #######################################################
 master.menu.administrator.adminDisplay = Display de Administrador
 master.menu.administrator.dashboard = Panel de control
 master.menu.administrator.customParams = Parámetros de Customización
-master.menu.administrator.announcements.list = Anuncios (ADMIN)
-master.menu.administrator.challenge.list = Retos (ADMIN)
-master.menu.administrator.challenge.create = Crear reto
-master.menu.administrator.announcements.create = Crear Anuncios (ADMIN)
-master.menu.administrator.investorRecord.list = Lista de registro de inversores
-master.menu.administrator.investorRecord.create = Crear una lista de inversores
 
 # master.menu.anonymous.announcements #######################################################
 master.menu.anonymous.announcements.list = Lista de Anuncios
@@ -76,8 +70,14 @@ master.menu.authenticated.announcements.list = Lista de Anuncios
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
-master.menu.administrator.companyrecord.list = Company Records
-master.menu.administrator.companyrecord.create = Create Company Record
+master.menu.administrator.companyrecord.list = Lista de Registros de compañías (ADMIN)
+master.menu.administrator.companyrecord.create = Crear Registro de compañía
+master.menu.administrator.announcements.list = Lista de Anuncios (ADMIN)
+master.menu.administrator.challenge.list = Lista de Retos (ADMIN)
+master.menu.administrator.challenge.create = Crear reto
+master.menu.administrator.announcements.create = Crear Anuncios
+master.menu.administrator.investorRecord.list = Lista de registro de inversores (ADMIN)
+master.menu.administrator.investorRecord.create = Crear una lista de inversores
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
 

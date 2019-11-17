@@ -65,6 +65,16 @@ public class AdministratorChallengeCreateService implements AbstractCreateServic
 		Date date = new Date();
 		boolean esAntes = entity.getDeadline().before(date);
 		errors.state(request, !esAntes, "deadline", "administrator.challenge.error.deadline");
+
+		boolean rewardBronzeCurrency = entity.getRewardBronze().getCurrency().equals("EUROS");
+		errors.state(request, rewardBronzeCurrency, "rewardBronze", "administrator.challenge.error.rewardBronze");
+
+		boolean rewardSilverCurrency = entity.getRewardBronze().getCurrency().equals("EUROS");
+		errors.state(request, rewardSilverCurrency, "rewardSilver", "administrator.challenge.error.rewardSilver");
+
+		boolean rewardGoldCurrency = entity.getRewardBronze().getCurrency().equals("EUROS");
+		errors.state(request, rewardGoldCurrency, "rewardGold", "administrator.challenge.error.rewardGold");
+
 	}
 
 	@Override

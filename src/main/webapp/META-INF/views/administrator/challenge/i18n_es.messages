@@ -17,3 +17,6 @@ administrator.challenge.form.button.update = Actualizar
 administrator.challenge.form.button.delete = Borrar
 
 administrator.challenge.error.deadline = La fecha límite debe ser posterior a la actual
+administrator.challenge.error.rewardBronze = La moneda debe ser "EUROS"
+administrator.challenge.error.rewardSilver = La moneda debe ser "EUROS"
+administrator.challenge.error.rewardGold = La moneda debe ser "EUROS"

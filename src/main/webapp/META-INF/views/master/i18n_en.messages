@@ -59,12 +59,6 @@ master.menu.authenticated.request.list = List Requests
 master.menu.administrator.adminDisplay = Admin Display
 master.menu.administrator.dashboard = Dashboard
 master.menu.administrator.customParams = Customisation Parameters
-master.menu.administrator.announcements.list = Announcements (ADMIN)
-master.menu.administrator.challenge.list = Challenges (ADMIN)
-master.menu.administrator.challenge.create = Create Challenge
-master.menu.administrator.announcements.create = Create Announcement (ADMIN)
-master.menu.administrator.investorRecord.list = Investors
-master.menu.administrator.investorRecord.create = Create Investor
 
 
 # master.menu.anonymous.announcements #######################################################s
@@ -76,9 +70,15 @@ master.menu.authenticated.announcements.list = List Announcements
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
-master.menu.administrator.companyrecord.list = Company Records
-master.menu.administrator.companyrecord.create = Crear Company Record
+master.menu.administrator.companyrecord.list = Company Records List (ADMIN)
+master.menu.administrator.companyrecord.create = Create Company Record
 master.menu.administrator.user-accounts = User accounts
+master.menu.administrator.announcements.list = Announcements List (ADMIN)
+master.menu.administrator.challenge.list = Challenges List (ADMIN)
+master.menu.administrator.challenge.create = Create Challenge
+master.menu.administrator.announcements.create = Create Announcement 
+master.menu.administrator.investorRecord.list = Investors List (ADMIN)
+master.menu.administrator.investorRecord.create = Create Investor
 master.menu.administrator.shutdown = Shut down
 
 master.menu.administrator.commercialBanner.list = Commercial Banner List

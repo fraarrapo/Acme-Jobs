@@ -11,3 +11,5 @@ administrator.nonCommercialBanner.form.label.jingleurl = Jingle URL
 	
 administrator.nonCommercialBanner.form.button.create = Create
 administrator.nonCommercialBanner.form.button.return = Return
+administrator.nonCommercialBanner.form.button.update = Update
+administrator.nonCommercialBanner.form.button.delete = Delete

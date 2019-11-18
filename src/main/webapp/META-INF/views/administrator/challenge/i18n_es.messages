@@ -3,12 +3,12 @@ administrator.challenge.list.label.description = Descripción
 
 administrator.challenge.form.label.title = Título
 administrator.challenge.form.label.description = Descripción
-administrator.challenge.form.label.goalsGold = Objetivo oro
-administrator.challenge.form.label.goalsSilver = Objetivo plata
-administrator.challenge.form.label.goalsBronze = Objetivo bronce
-administrator.challenge.form.label.rewardsGold = Recompensa oro
-administrator.challenge.form.label.rewardsSilver = Recompensa plata
-administrator.challenge.form.label.rewardsBronze = Recompensa bronce
+administrator.challenge.form.label.goalsgold = Objetivo oro
+administrator.challenge.form.label.goalssilver = Objetivo plata
+administrator.challenge.form.label.goalsbronze = Objetivo bronce
+administrator.challenge.form.label.rewardsgold = Recompensa oro
+administrator.challenge.form.label.rewardssilver = Recompensa plata
+administrator.challenge.form.label.rewardsbronze = Recompensa bronce
 administrator.challenge.form.label.deadline = Fecha límite
 administrator.challenge.form.label.return = Volver
 
@@ -20,3 +20,6 @@ administrator.challenge.error.deadline = La fecha límite debe ser posterior a l
 administrator.challenge.error.rewardBronze = La moneda debe ser "EUROS"
 administrator.challenge.error.rewardSilver = La moneda debe ser "EUROS"
 administrator.challenge.error.rewardGold = La moneda debe ser "EUROS"
+administrator.challenge.error.noNeg = La cantidad debe ser positiva
+administrator.challenge.error.bronzeMenor = La cantidad de la recompensa de Bronce debe ser menor que la de Oro y Plata
+administrator.challenge.error.silverMenor = La cantidad de la recompensa de Plata debe ser menor que la de Oro

@@ -58,22 +58,39 @@ public class AdministratorChallengeCreateService implements AbstractCreateServic
 
 	@Override
 	public void validate(final Request<Challenge> request, final Challenge entity, final Errors errors) {
-		assert request != null;
-		assert entity != null;
-		assert errors != null;
+		if (!errors.hasErrors("deadline") && !errors.hasErrors("rewardGold") && !errors.hasErrors("rewardSilver") && !errors.hasErrors("rewardBronze")) {
+			assert request != null;
 
-		Date date = new Date();
-		boolean esAntes = entity.getDeadline().before(date);
-		errors.state(request, !esAntes, "deadline", "administrator.challenge.error.deadline");
+			assert entity != null;
+			assert errors != null;
 
-		boolean rewardBronzeCurrency = entity.getRewardBronze().getCurrency().equals("EUROS");
-		errors.state(request, rewardBronzeCurrency, "rewardBronze", "administrator.challenge.error.rewardBronze");
+			Date date = new Date();
+			boolean esAntes = entity.getDeadline().before(date);
+			errors.state(request, !esAntes, "deadline", "administrator.challenge.error.deadline");
 
-		boolean rewardSilverCurrency = entity.getRewardBronze().getCurrency().equals("EUROS");
-		errors.state(request, rewardSilverCurrency, "rewardSilver", "administrator.challenge.error.rewardSilver");
+			boolean rewardBronzeCurrency = entity.getRewardBronze().getCurrency().equals("EUROS");
+			errors.state(request, rewardBronzeCurrency, "rewardBronze", "administrator.challenge.error.rewardBronze");
 
-		boolean rewardGoldCurrency = entity.getRewardBronze().getCurrency().equals("EUROS");
-		errors.state(request, rewardGoldCurrency, "rewardGold", "administrator.challenge.error.rewardGold");
+			boolean rewardSilverCurrency = entity.getRewardBronze().getCurrency().equals("EUROS");
+			errors.state(request, rewardSilverCurrency, "rewardSilver", "administrator.challenge.error.rewardSilver");
+
+			boolean rewardGoldCurrency = entity.getRewardBronze().getCurrency().equals("EUROS");
+			errors.state(request, rewardGoldCurrency, "rewardGold", "administrator.challenge.error.rewardGold");
+
+			boolean noNegGold = entity.getRewardGold().getAmount() < 0.0;
+			errors.state(request, !noNegGold, "rewardGold", "administrator.challenge.error.noNeg");
+
+			boolean noNegSilver = entity.getRewardSilver().getAmount() < 0.0;
+			errors.state(request, !noNegSilver, "rewardSilver", "administrator.challenge.error.noNeg");
+
+			boolean noNegBronze = entity.getRewardBronze().getAmount() < 0.0;
+			errors.state(request, !noNegBronze, "rewardBronze", "administrator.challenge.error.noNeg");
+
+			boolean bronzeMenor = entity.getRewardBronze().getAmount() <= entity.getRewardSilver().getAmount() && entity.getRewardBronze().getAmount() <= entity.getRewardGold().getAmount();
+			errors.state(request, bronzeMenor, "rewardBronze", "administrator.challenge.error.bronzeMenor");
+			boolean silverMenor = entity.getRewardSilver().getAmount() <= entity.getRewardGold().getAmount();
+			errors.state(request, silverMenor, "rewardSilver", "administrator.challenge.error.silverMenor");
+		}
 
 	}
 

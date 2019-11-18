@@ -10,3 +10,5 @@ administrator.nonCommercialBanner.form.label.jingleurl = URL Música
 	
 administrator.nonCommercialBanner.form.button.create = Crear
 administrator.nonCommercialBanner.form.button.return = Volver
+administrator.nonCommercialBanner.form.button.update = Actualizar 
+administrator.nonCommercialBanner.form.button.delete = Borrar

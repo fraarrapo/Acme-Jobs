@@ -20,3 +20,6 @@ administrator.challenge.error.deadline = Deadline must be after actual date
 administrator.challenge.error.rewardBronze = Currency must be "EUROS"
 administrator.challenge.error.rewardSilver = Currency must be "EUROS"
 administrator.challenge.error.rewardGold = Currency must be "EUROS"
+administrator.challenge.error.noNeg = The amount must be positive
+administrator.challenge.error.bronzeMenor = The Bronze reward amount should be less than the Gold and Silver ones
+administrator.challenge.error.silverMenor = The Silver reward amount should be less than the Gold one

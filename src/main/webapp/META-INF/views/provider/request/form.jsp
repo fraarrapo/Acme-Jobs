@@ -16,24 +16,19 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form>
+
 	<acme:form-textbox code="provider.request.form.label.title" path="title"/>
-	
-	
-	<jstl:if test="${command != 'create' }">
 	<acme:form-moment code="provider.request.form.label.creationMoment" 
 	path="creationMoment"
 	readonly = "true"/>
-	</jstl:if>
 	<acme:form-moment code="provider.request.form.label.deadline" path="deadline"/>
 	<acme:form-textarea code="provider.request.form.label.description" path="description"/>
 	<acme:form-textbox code="provider.request.form.label.reward" path="reward"/>
 	<acme:form-textbox code="provider.request.form.label.ticker" path="ticker"/>
 	
-	
 	<acme:form-checkbox code="provider.request.label.aceptar" path="aceptar"/>
 	
 	<acme:form-submit code="provider.request.form.button.create"
 	action="/provider/request/create"/>
-	
 	<acme:form-return code="provider.request.form.button.return"/>
 </acme:form>

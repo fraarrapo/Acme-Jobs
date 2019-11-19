@@ -67,38 +67,40 @@ public class ConsumerOfferCreateService implements AbstractCreateService<Consume
 
 	@Override
 	public void validate(final Request<Offer> request, final Offer entity, final Errors errors) {
+		assert request != null;
+		assert entity != null;
+		assert errors != null;
 
-		if (!errors.hasErrors("moneyMin") && !errors.hasErrors("moneyMax") && !errors.hasErrors("deadline")) {
-			assert request != null;
-			assert entity != null;
-			assert errors != null;
+		Date date = new Date();
 
-			Date date = new Date();
-
+		if (!errors.hasErrors("deadline")) {
 			boolean esAntes = entity.getDeadline().before(date);
 			errors.state(request, !esAntes, "deadline", "consumer.offer.error.deadline");
-
-			boolean repetido = this.repository.getTickers(entity.getTicker()) > 0;
-			errors.state(request, !repetido, "ticker", "consumer.offer.error.ticker");
-
-			boolean isAccepted = request.getModel().getBoolean("aceptar");
-			errors.state(request, isAccepted, "aceptar", "consumer.offer.error.aceptar");
-
-			boolean noNegMax = entity.getMoneyMax().getAmount() < 0.0;
-			errors.state(request, !noNegMax, "moneyMax", "consumer.offer.error.moneyMax.noNegMax");
-
+		}
+		if (!errors.hasErrors("moneyMin")) {
+			boolean moneyCurrencyMin = entity.getMoneyMin().getCurrency().equals("EUROS") || entity.getMoneyMin().getCurrency().equals("€");
+			errors.state(request, moneyCurrencyMin, "moneyMin", "consumer.offer.error.moneyMin.currency");
 			boolean noNegMin = entity.getMoneyMin().getAmount() < 0.0;
 			errors.state(request, !noNegMin, "moneyMin", "consumer.offer.error.moneyMin.noNegMin");
-
-			boolean moneyCurrencyMax = entity.getMoneyMax().getCurrency().equals("EUROS");
+		}
+		if (!errors.hasErrors("moneyMax")) {
+			boolean moneyCurrencyMax = entity.getMoneyMax().getCurrency().equals("EUROS") || entity.getMoneyMax().getCurrency().equals("€");
 			errors.state(request, moneyCurrencyMax, "moneyMax", "consumer.offer.error.moneyMax.currency");
+			boolean noNegMax = entity.getMoneyMax().getAmount() < 0.0;
+			errors.state(request, !noNegMax, "moneyMax", "consumer.offer.error.moneyMax.noNegMax");
+		}
 
-			boolean moneyCurrencyMin = entity.getMoneyMin().getCurrency().equals("EUROS");
-			errors.state(request, moneyCurrencyMin, "moneyMin", "consumer.offer.error.moneyMin.currency");
-
+		if (!errors.hasErrors("moneyMin") && !errors.hasErrors("moneyMax")) {
 			boolean moneyAmount = entity.getMoneyMin().getAmount() <= entity.getMoneyMax().getAmount();
 			errors.state(request, moneyAmount, "moneyMin", "consumer.offer.error.moneyMin");
 		}
+
+		boolean repetido = this.repository.getTickers(entity.getTicker()) > 0;
+		errors.state(request, !repetido, "ticker", "consumer.offer.error.ticker");
+
+		boolean isAccepted = request.getModel().getBoolean("aceptar");
+		errors.state(request, isAccepted, "aceptar", "consumer.offer.error.aceptar");
+
 	}
 
 	@Override

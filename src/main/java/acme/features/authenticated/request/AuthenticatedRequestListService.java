@@ -1,7 +1,10 @@
 
 package acme.features.authenticated.request;
 
+import java.util.Calendar;
 import java.util.Collection;
+import java.util.Date;
+import java.util.TimeZone;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -39,8 +42,10 @@ public class AuthenticatedRequestListService implements AbstractListService<Auth
 		assert request != null;
 
 		Collection<acme.entities.requests.Request> result;
+		Calendar cal = Calendar.getInstance(TimeZone.getDefault());
+		Date ldt = cal.getTime();
 
-		result = this.repository.findManyAll();
+		result = this.repository.findManyAll(ldt);
 
 		return result;
 	}

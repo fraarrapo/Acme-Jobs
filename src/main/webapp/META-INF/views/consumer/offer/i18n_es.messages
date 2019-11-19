@@ -26,6 +26,8 @@ consumer.offer.error.aceptar = La confirmación debe estar marcada
 consumer.offer.error.moneyMin = La recompensa mínima no puede ser mayor que la máxima
 consumer.offer.error.moneyMax.currency = La moneda debe ser euros
 consumer.offer.error.moneyMin.currency = La moneda debe ser euros
+consumer.offer.error.moneyMin.noNegMin = La cantidad no puede ser negativa
+consumer.offer.error.moneyMax.noNegMax = La cantidad no puede ser negativa
 
 consumer.offer.form.label.ticker = Ticker
 

@@ -67,28 +67,31 @@ public class ProviderRequestCreateService implements AbstractCreateService<Provi
 
 	@Override
 	public void validate(final acme.framework.components.Request<Request> request, final Request entity, final Errors errors) {
-		if (!errors.hasErrors("deadline") && !errors.hasErrors("reward")) {
-			assert request != null;
-			assert entity != null;
-			assert errors != null;
+		assert request != null;
+		assert entity != null;
+		assert errors != null;
 
-			Date date = new Date();
+		Date date = new Date();
 
+		if (!errors.hasErrors("deadline")) {
 			boolean esAntes = entity.getDeadline().before(date);
 			errors.state(request, !esAntes, "deadline", "provider.request.error.deadline");
+		}
 
-			boolean repetido = this.repository.getTickers(entity.getTicker()) > 0;
-			errors.state(request, !repetido, "ticker", "provider.request.error.ticker");
-
-			boolean isAccepted = request.getModel().getBoolean("aceptar");
-			errors.state(request, isAccepted, "aceptar", "provider.request.error.aceptar");
-
-			boolean noNegMax = entity.getReward().getAmount() < 0.0;
-			errors.state(request, !noNegMax, "reward", "provider.request.error.rewardAmount");
+		if (!errors.hasErrors("reward")) {
+			//	boolean noNegMax = entity.getReward().getAmount() < 0.0;
+			//errors.state(request, !noNegMax, "reward", "provider.request.error.rewardAmount");
 
 			boolean moneyCurrencyMax = entity.getReward().getCurrency().equals("EUROS");
 			errors.state(request, moneyCurrencyMax, "reward", "provider.request.error.rewardCurrency");
 		}
+
+		boolean repetido = this.repository.getTickers(entity.getTicker()) > 0;
+		errors.state(request, !repetido, "ticker", "provider.request.error.ticker");
+
+		boolean isAccepted = request.getModel().getBoolean("aceptar");
+		errors.state(request, isAccepted, "aceptar", "provider.request.error.aceptar");
+
 	}
 
 	@Override

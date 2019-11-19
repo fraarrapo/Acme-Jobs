@@ -27,6 +27,8 @@ consumer.offer.error.aceptar = The confirmation must be selected
 consumer.offer.error.moneyMin = The minimum reward cannot be greater than the maximum
 consumer.offer.error.moneyMax.currency = The Currency must be euros
 consumer.offer.error.moneyMin.currency = The Currency must be euros
+consumer.offer.error.moneyMin.noNegMin = The amount must be positive
+consumer.offer.error.moneyMax.noNegMax = The amount must be positive
 
 consumer.offer.form.button.create = Create
 consumer.offer.form.button.return = Return

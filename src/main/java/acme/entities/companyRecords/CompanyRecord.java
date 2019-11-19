@@ -2,6 +2,8 @@
 package acme.entities.companyRecords;
 
 import javax.persistence.Entity;
+import javax.persistence.Index;
+import javax.persistence.Table;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
@@ -17,6 +19,9 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
+@Table(indexes = {
+	@Index(columnList = "stars")
+})
 public class CompanyRecord extends DomainEntity {
 
 	//Serialisation identifier ---------------------------------------------

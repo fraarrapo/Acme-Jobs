@@ -13,11 +13,11 @@ authenticated.request.list.label.creationMoment = Fecha Creación
 authenticated.request.list.label.deadline = Fecha Límite
 authenticated.request.list.label.description = Descripción
 authenticated.request.list.label.reward = Recompensa
-authenticated.request.list.label.ticket = Ticker
+authenticated.request.list.label.ticker = Ticker
 
 authenticated.request.form.label.title = Título
 authenticated.request.form.label.creationMoment = Fecha Creación
 authenticated.request.form.label.deadline = Fecha Límite
 authenticated.request.form.label.description = Descripción
 authenticated.request.form.label.reward = Recompensa
-authenticated.request.form.label.ticket = Ticker
+authenticated.request.form.label.ticker = Ticker

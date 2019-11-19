@@ -6,7 +6,12 @@ administrator.commercialBanner.list.label.imageurl = URL Imagen
 administrator.commercialBanner.form.label.slogan = Eslogan
 administrator.commercialBanner.form.label.imageurl = URL Imagen
 administrator.commercialBanner.form.label.targeturl = URL Destino
-administrator.commercialBanner.form.label.creditcard = Tarjeta de Crédito
+administrator.commercialBanner.form.label.cardNumber = Número de la tarjeta de crédito
+administrator.commercialBanner.form.label.holder = Dueño de la tarjeta de crédito
+administrator.commercialBanner.form.label.cvv = CVV	
+administrator.commercialBanner.form.label.brand = Marca
+administrator.commercialBanner.form.label.expirationMonth = Mes de caducidad
+administrator.commercialBanner.form.label.expirationYear = Año de caducidad
 
 administrator.commercialBanner.form.button.create = Crear
 administrator.commercialBanner.form.button.update = Actualizar

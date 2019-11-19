@@ -19,11 +19,13 @@ public class CommercialBanner extends Banner {
 	private static final long	serialVersionUID	= 1L;
 
 	@CreditCardNumber
-	private long				cardNumber;
+	private String				cardNumber;
 
 	@NotBlank
 	private String				holder;
 
+	@Min(0)
+	@Max(999)
 	private int					cvv;
 
 	@NotBlank

@@ -19,7 +19,7 @@
 	<acme:form-textbox code="administrator.nonCommercialBanner.form.label.slogan" path="slogan"/>
 	<acme:form-url code="administrator.nonCommercialBanner.form.label.imageurl" path="imageurl"/>
 	<acme:form-url code="administrator.nonCommercialBanner.form.label.targeturl" path="targeturl"/>
-	<acme:form-textbox code="administrator.nonCommercialBanner.form.label.jingleurl" path="jingleurl"/>
+	<acme:form-url code="administrator.nonCommercialBanner.form.label.jingleurl" path="jingleurl"/>
 	
 	<acme:form-submit test="${command == 'show' }"
 		code="administrator.nonCommercialBanner.form.button.update"

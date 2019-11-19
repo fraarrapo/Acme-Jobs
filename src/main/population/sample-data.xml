@@ -203,21 +203,24 @@
 	<property name="imageurl" value="http://www.imagenes1.com"/>
 	<property name="slogan" value="Slogan del banner comercial 01"/>
 	<property name="targeturl" value="http://www.targerurl01.com"/>
-	<property name="creditcard" value="1234567812345678ABC"/>
+	<property name="cardNumber" value="4376925573423858"/>
+	<property name="holder" value="Paco Diaz"/>
+	<property name="cvv" value="900"/>
+	<property name="brand" value="VISA"/>
+	<property name="expirationMonth" value="12"/>
+	<property name="expirationYear" value="2019"/>
 	</bean>
 	
-	<bean id = "commercialbanner02" class = "acme.entities.banners.CommercialBanner">
-	<property name="imageurl" value="http://www.imagenes2.com"/>
-	<property name="slogan" value="Slogan del banner comercial 02"/>
-	<property name="targeturl" value="http://www.targerurl02.com"/>
-	<property name="creditcard" value="21234567812345678ABC"/>
-	</bean>
-	
-	<bean id = "commercialbanner03" class = "acme.entities.banners.CommercialBanner">
-	<property name="imageurl" value="http://www.imagenes3.com"/>
-	<property name="slogan" value="Slogan del banner comercial 3"/>
-	<property name="targeturl" value="http://www.targerurl03.com"/>
-	<property name="creditcard" value="31234567812345678ABC"/>
+		<bean id = "commercialbanner02" class = "acme.entities.banners.CommercialBanner">
+	<property name="imageurl" value="http://www.imagenes1.com"/>
+	<property name="slogan" value="Slogan del banner comercial 01"/>
+	<property name="targeturl" value="http://www.targerurl01.com"/>
+	<property name="cardNumber" value="4465307888273140"/>
+	<property name="holder" value="Paco Diaz"/>
+	<property name="cvv" value="992"/>
+	<property name="brand" value="MasterCard"/>
+	<property name="expirationMonth" value="12"/>
+	<property name="expirationYear" value="2020"/>
 	</bean>
 	
 	<bean id = "noncommercialbanner01" class = "acme.entities.banners.NonCommercialBanner">

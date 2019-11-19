@@ -1,6 +1,8 @@
 
 package acme.features.administrator.banner.CommercialBanner;
 
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -60,6 +62,12 @@ public class AdministratorCommercialBannerCreateService implements AbstractCreat
 		assert entity != null;
 		assert errors != null;
 
+		Date date = new Date();
+
+		if (!errors.hasErrors("expirationYear")) {
+			boolean esAntes = entity.getExpirationYear() > date.getYear();
+			errors.state(request, !esAntes, "expirationYear", "administrator.commercialBanner.error.expirationYear");
+		}
 	}
 
 	@Override

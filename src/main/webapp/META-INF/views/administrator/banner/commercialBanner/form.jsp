@@ -18,7 +18,16 @@
 	<acme:form-textbox code="administrator.commercialBanner.form.label.slogan" path="slogan"/>
 	<acme:form-url code="administrator.commercialBanner.form.label.imageurl" path="imageurl"/>
 	<acme:form-url code="administrator.commercialBanner.form.label.targeturl" path="targeturl"/>
-	<acme:form-textbox code="administrator.commercialBanner.form.label.creditcard" path="creditcard"/>
+	<acme:form-integer code="administrator.commercialBanner.form.label.cardNumber" path="cardNumber"/>
+	<acme:form-textbox code="administrator.commercialBanner.form.label.holder" path="holder"/>
+	<acme:form-integer code="administrator.commercialBanner.form.label.cvv" path="cvv"/>
+	<acme:form-textbox code="administrator.commercialBanner.form.label.brand" path="brand"/>
+	<acme:form-integer code="administrator.commercialBanner.form.label.expirationMonth" path="expirationMonth"/>
+	<acme:form-integer code="administrator.commercialBanner.form.label.expirationYear" path="expirationYear"/>
+
+
+	
+	
 	
 	<acme:form-submit test="${command == 'show' }"
 		code="administrator.commercialBanner.form.button.update"

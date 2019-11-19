@@ -7,7 +7,12 @@ administrator.commercialBanner.list.label.imageurl = Image URL
 administrator.commercialBanner.form.label.slogan = Slogan
 administrator.commercialBanner.form.label.imageurl = Image URL
 administrator.commercialBanner.form.label.targeturl = Target URL
-administrator.commercialBanner.form.label.creditcard = Credit Card
+administrator.commercialBanner.form.label.cardNumber = Number of the credit card
+administrator.commercialBanner.form.label.holder = Owner of the credit card
+administrator.commercialBanner.form.label.cvv = CVV	
+administrator.commercialBanner.form.label.brand = Brand
+administrator.commercialBanner.form.label.expirationMonth = Expiration Month
+administrator.commercialBanner.form.label.expirationYear = Expiration Year
 	
 administrator.commercialBanner.form.button.create = Create
 administrator.commercialBanner.form.button.update = Update

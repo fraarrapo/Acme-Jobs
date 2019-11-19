@@ -1,7 +1,7 @@
 
 package acme.features.administrator.banner.CommercialBanner;
 
-import java.util.Date;
+import java.time.YearMonth;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -42,7 +42,7 @@ public class AdministratorCommercialBannerCreateService implements AbstractCreat
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "slogan", "imageurl");
+		request.unbind(entity, model, "slogan", "imageurl", "targeturl", "cardNumber", "holder", "cvv", "brand", "expirationMonth", "expirationYear");
 	}
 
 	@Override
@@ -62,12 +62,18 @@ public class AdministratorCommercialBannerCreateService implements AbstractCreat
 		assert entity != null;
 		assert errors != null;
 
-		Date date = new Date();
-
-		if (!errors.hasErrors("expirationYear")) {
-			boolean esAntes = entity.getExpirationYear() > date.getYear();
-			errors.state(request, !esAntes, "expirationYear", "administrator.commercialBanner.error.expirationYear");
+		if (!errors.hasErrors("expirationYear") && !errors.hasErrors("expirationMonth")) {
+			YearMonth ym = YearMonth.now();
+			YearMonth introducido = YearMonth.of(entity.getExpirationYear(), entity.getExpirationMonth());
+			boolean cmp = introducido.isBefore(ym);
+			errors.state(request, !cmp, "expirationYear", "administrator.commercialBanner.error.expiration");
+			errors.state(request, !cmp, "expirationMonth", "administrator.commercialBanner.error.expiration");
 		}
+		if (!errors.hasErrors("cvv")) {
+			boolean rangoCVV = String.valueOf(entity.getCvv()).length() == 3;
+			errors.state(request, rangoCVV, "cvv", "administrator.commercialBanner.error.cvv");
+		}
+
 	}
 
 	@Override

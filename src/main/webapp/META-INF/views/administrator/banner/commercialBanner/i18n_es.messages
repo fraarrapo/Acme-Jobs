@@ -17,3 +17,6 @@ administrator.commercialBanner.form.button.create = Crear
 administrator.commercialBanner.form.button.update = Actualizar
 administrator.commercialBanner.form.button.delete = Borrar
 administrator.commercialBanner.form.button.return = Volver
+
+administrator.commercialBanner.error.expiration = La fecha de expiración está en el pasado
+administrator.commercialBanner.error.cvv = El CVV tiene que tener 3 dígitos obligatoriamente

@@ -9,8 +9,8 @@
 	<acme:form-textbox code="autheticated.companyrecord.form.label.nameCEO" path="nameCEO" />
 	<acme:form-textarea code="autheticated.companyrecord.form.label.description" path="description" />
 	<acme:form-url code="autheticated.companyrecord.form.label.website" path="website" />
-	<acme:form-textbox code="autheticated.companyrecord.form.label.phone" path="phone" />
-	<acme:form-textbox code="autheticated.companyrecord.form.label.email" path="email"/>
+	<acme:form-textbox placeholder="+999 (9999) 999999" code="autheticated.companyrecord.form.label.phone" path="phone" />
+	<acme:form-textbox placeholder="user@mail.com" code="autheticated.companyrecord.form.label.email" path="email"/>
 	<acme:form-checkbox code="autheticated.companyrecord.form.label.incorporated" path="incorporated" />
 	<acme:form-textbox code="autheticated.companyrecord.form.label.rating" path="rating" />
 	

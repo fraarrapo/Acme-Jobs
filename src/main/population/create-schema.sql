@@ -30,15 +30,6 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `banner` (
-       `id` integer not null,
-        `version` integer not null,
-        `imageurl` varchar(255),
-        `slogan` varchar(255),
-        `targeturl` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-
     create table `challenge` (
        `id` integer not null,
         `version` integer not null,
@@ -63,7 +54,12 @@
         `imageurl` varchar(255),
         `slogan` varchar(255),
         `targeturl` varchar(255),
-        `creditcard` varchar(255),
+        `brand` varchar(255),
+        `card_number` varchar(255),
+        `cvv` integer not null,
+        `expiration_month` integer not null,
+        `expiration_year` integer not null,
+        `holder` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 

@@ -18,7 +18,7 @@
 	<acme:form-textbox code="administrator.commercialBanner.form.label.slogan" path="slogan"/>
 	<acme:form-url code="administrator.commercialBanner.form.label.imageurl" path="imageurl"/>
 	<acme:form-url code="administrator.commercialBanner.form.label.targeturl" path="targeturl"/>
-	<acme:form-integer code="administrator.commercialBanner.form.label.cardNumber" path="cardNumber"/>
+	<acme:form-integer placeholder="5380724565863291" code="administrator.commercialBanner.form.label.cardNumber" path="cardNumber"/>
 	<acme:form-textbox code="administrator.commercialBanner.form.label.holder" path="holder"/>
 	<acme:form-integer code="administrator.commercialBanner.form.label.cvv" path="cvv"/>
 	<acme:form-textbox code="administrator.commercialBanner.form.label.brand" path="brand"/>

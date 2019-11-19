@@ -77,7 +77,7 @@ master.menu.administrator.challenge.list = Lista de Retos (ADMIN)
 master.menu.administrator.challenge.create = Crear reto
 master.menu.administrator.announcements.create = Crear Anuncios
 master.menu.administrator.investorRecord.list = Lista de registro de inversores (ADMIN)
-master.menu.administrator.investorRecord.create = Crear una lista de inversores
+master.menu.administrator.investorRecord.create = Crear un registro de inversor
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
 

@@ -18,9 +18,6 @@
 <acme:form>
 
 	<acme:form-textbox code="provider.request.form.label.title" path="title"/>
-	<acme:form-moment code="provider.request.form.label.creationMoment" 
-	path="creationMoment"
-	readonly = "true"/>
 	<acme:form-moment code="provider.request.form.label.deadline" path="deadline"/>
 	<acme:form-textarea code="provider.request.form.label.description" path="description"/>
 	<acme:form-textbox code="provider.request.form.label.reward" path="reward"/>

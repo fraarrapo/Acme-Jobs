@@ -9,9 +9,9 @@
 	<acme:form-textarea code="authenticated.challenge.form.label.goalsgold" path="goalGold"/>
 	<acme:form-textarea code="authenticated.challenge.form.label.goalssilver" path="goalSilver"/>
 	<acme:form-textarea code="authenticated.challenge.form.label.goalsbronze" path="goalBronze"/>
-	<acme:form-textarea code="authenticated.challenge.form.label.rewardsgold" path="rewardGold"/>
-	<acme:form-textarea code="authenticated.challenge.form.label.rewardssilver" path="rewardSilver"/>
-	<acme:form-textarea code="authenticated.challenge.form.label.rewardsbronze" path="rewardBronze"/>
+	<acme:form-money code="authenticated.challenge.form.label.rewardsgold" path="rewardGold"/>
+	<acme:form-money code="authenticated.challenge.form.label.rewardssilver" path="rewardSilver"/>
+	<acme:form-money code="authenticated.challenge.form.label.rewardsbronze" path="rewardBronze"/>
 	<acme:form-moment code="authenticated.challenge.form.label.deadline" path="deadline"/>
 	
 	<acme:form-return code="authenticated.challenge.form.label.return"/>

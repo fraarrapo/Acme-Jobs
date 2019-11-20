@@ -79,11 +79,10 @@ public class ProviderRequestCreateService implements AbstractCreateService<Provi
 		}
 
 		if (!errors.hasErrors("reward")) {
-			//	boolean noNegMax = entity.getReward().getAmount() < 0.0;
-			//errors.state(request, !noNegMax, "reward", "provider.request.error.rewardAmount");
-
-			boolean moneyCurrencyMax = entity.getReward().getCurrency().equals("EUROS");
+			boolean moneyCurrencyMax = entity.getReward().getCurrency().equals("EUROS") || entity.getReward().getCurrency().equals("€");
 			errors.state(request, moneyCurrencyMax, "reward", "provider.request.error.rewardCurrency");
+			boolean noNegReward = entity.getReward().getAmount() < 0.0;
+			errors.state(request, !noNegReward, "reward", "provider.request.error.noNegReward");
 		}
 
 		boolean repetido = this.repository.getTickers(entity.getTicker()) > 0;

@@ -29,7 +29,7 @@ provider.request.form.button.return = Return
 provider.request.error.deadline = The Deadline must be future
 provider.request.error.ticker = The Ticker must be unique
 provider.request.error.aceptar = The confirmation must be selected
-provider.request.error.rewardAmount = The reward must be positive 
+provider.request.error.noNegReward = The reward must be positive 
 provider.request.error.rewardCurrency = The reward must be euros
 
 

@@ -29,5 +29,5 @@ provider.request.form.button.return = Volver
 provider.request.error.deadline =  El Fin de la oferta debe ser furturo
 provider.request.error.ticker = El Ticker debe ser único
 provider.request.error.aceptar = La confirmación debe estar marcada
-provider.request.error.rewardAmount = La Recompensa debe ser positiva 
+provider.request.error.noNegReward = La Recompensa debe ser positiva 
 provider.request.error.rewardCurrency = La moneda debe ser euros

@@ -56,7 +56,8 @@ CREATE TABLE `announcement` (
   `more_info` varchar(255) DEFAULT NULL,
   `text` varchar(255) DEFAULT NULL,
   `title` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  KEY `IDXnhikaa2dj3la6o2o7e9vo01y0` (`moment`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -125,32 +126,6 @@ INSERT INTO `authenticated` VALUES (5,0,3);
 UNLOCK TABLES;
 
 --
--- Table structure for table `banner`
---
-
-DROP TABLE IF EXISTS `banner`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `banner` (
-  `id` int(11) NOT NULL,
-  `version` int(11) NOT NULL,
-  `imageurl` varchar(255) DEFAULT NULL,
-  `slogan` varchar(255) DEFAULT NULL,
-  `targeturl` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `banner`
---
-
-LOCK TABLES `banner` WRITE;
-/*!40000 ALTER TABLE `banner` DISABLE KEYS */;
-/*!40000 ALTER TABLE `banner` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `challenge`
 --
 
@@ -172,7 +147,8 @@ CREATE TABLE `challenge` (
   `reward_silver_amount` double DEFAULT NULL,
   `reward_silver_currency` varchar(255) DEFAULT NULL,
   `title` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  KEY `IDXnr284tes3x8hnd3h716tmb3fr` (`deadline`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -199,7 +175,12 @@ CREATE TABLE `commercial_banner` (
   `imageurl` varchar(255) DEFAULT NULL,
   `slogan` varchar(255) DEFAULT NULL,
   `targeturl` varchar(255) DEFAULT NULL,
-  `creditcard` varchar(255) DEFAULT NULL,
+  `brand` varchar(255) DEFAULT NULL,
+  `card_number` varchar(255) DEFAULT NULL,
+  `cvv` int(11) NOT NULL,
+  `expiration_month` int(11) NOT NULL,
+  `expiration_year` int(11) NOT NULL,
+  `holder` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -210,7 +191,7 @@ CREATE TABLE `commercial_banner` (
 
 LOCK TABLES `commercial_banner` WRITE;
 /*!40000 ALTER TABLE `commercial_banner` DISABLE KEYS */;
-INSERT INTO `commercial_banner` VALUES (26,0,'http://www.imagenes1.com','Slogan del banner comercial 01','http://www.targerurl01.com','1234567812345678ABC'),(27,0,'http://www.imagenes2.com','Slogan del banner comercial 02','http://www.targerurl02.com','21234567812345678ABC'),(28,0,'http://www.imagenes3.com','Slogan del banner comercial 3','http://www.targerurl03.com','31234567812345678ABC');
+INSERT INTO `commercial_banner` VALUES (26,0,'http://www.imagenes1.com','Slogan del banner comercial 01','http://www.targerurl01.com','VISA','4376925573423858',900,12,2019,'Paco Diaz'),(27,0,'http://www.imagenes1.com','Slogan del banner comercial 01','http://www.targerurl01.com','MasterCard','4465307888273140',992,12,2020,'Paco Diaz');
 /*!40000 ALTER TABLE `commercial_banner` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -230,10 +211,11 @@ CREATE TABLE `company_record` (
   `name` varchar(255) DEFAULT NULL,
   `nameceo` varchar(255) DEFAULT NULL,
   `phone` varchar(255) DEFAULT NULL,
-  `rating` int(11) DEFAULT NULL,
   `sector` varchar(255) DEFAULT NULL,
+  `stars` int(11) DEFAULT NULL,
   `website` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  KEY `IDX9pkce3d1y6w47wadap5s5xptc` (`stars`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -243,7 +225,7 @@ CREATE TABLE `company_record` (
 
 LOCK TABLES `company_record` WRITE;
 /*!40000 ALTER TABLE `company_record` DISABLE KEYS */;
-INSERT INTO `company_record` VALUES (7,0,'Jajajajaja manolo','anom@gmail.es',_binary '','ManoloSL','Manolo','+4 9999999999',5,'Agronomo','http://www.manolo.com'),(8,0,'Jajajajaja manolo','anoma@gmail.es',_binary '\0','ManoloSL','Manolo','(9979) 999998',5,'Agronomo','http://www.manolo.com'),(9,0,'Jajajajaja manolo','anomb@gmail.es',_binary '','ManoloSL','Manolo','99992319',5,'Agronomo','http://www.manolo.com');
+INSERT INTO `company_record` VALUES (7,0,'Jajajajaja manolo','anom@gmail.es',_binary '','ManoloSL','Manolo','+4 9999999999','Agronomo',5,'http://www.manolo.com'),(8,0,'Jajajajaja manolo','anoma@gmail.es',_binary '\0','ManoloSL','Manolo','(9979) 999998','Agronomo',5,'http://www.manolo.com'),(9,0,'Jajajajaja manolo','anomb@gmail.es',_binary '','ManoloSL','Manolo','99992319','Agronomo',5,'http://www.manolo.com');
 /*!40000 ALTER TABLE `company_record` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -319,7 +301,7 @@ CREATE TABLE `hibernate_sequence` (
 
 LOCK TABLES `hibernate_sequence` WRITE;
 /*!40000 ALTER TABLE `hibernate_sequence` DISABLE KEYS */;
-INSERT INTO `hibernate_sequence` VALUES (32);
+INSERT INTO `hibernate_sequence` VALUES (31);
 /*!40000 ALTER TABLE `hibernate_sequence` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -337,7 +319,8 @@ CREATE TABLE `investor_record` (
   `sector` varchar(255) DEFAULT NULL,
   `stars` int(11) DEFAULT NULL,
   `statement` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  KEY `IDXk2t3uthe649ao1jllcuks0gv4` (`stars`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -375,7 +358,7 @@ CREATE TABLE `non_commercial_banner` (
 
 LOCK TABLES `non_commercial_banner` WRITE;
 /*!40000 ALTER TABLE `non_commercial_banner` DISABLE KEYS */;
-INSERT INTO `non_commercial_banner` VALUES (29,0,'http://www.imagenesnocomerciales1.com','Slogan del banner no comercial 01','http://www.targerurlnocomercial01.com','http://www.jingleurl01.com'),(30,0,'http://www.imagenesnocomerciales2.com','Slogan del banner no comercial 02','http://www.targerurlnocomercial02.com','http://www.jingleurl02.com'),(31,0,'http://www.imagenesnocomerciales3.com','Slogan del banner no comercial 03','http://www.targerurlnocomercial03.com',NULL);
+INSERT INTO `non_commercial_banner` VALUES (28,0,'http://www.imagenesnocomerciales1.com','Slogan del banner no comercial 01','http://www.targerurlnocomercial01.com','http://www.jingleurl01.com'),(29,0,'http://www.imagenesnocomerciales2.com','Slogan del banner no comercial 02','http://www.targerurlnocomercial02.com','http://www.jingleurl02.com'),(30,0,'http://www.imagenesnocomerciales3.com','Slogan del banner no comercial 03','http://www.targerurlnocomercial03.com',NULL);
 /*!40000 ALTER TABLE `non_commercial_banner` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -399,7 +382,8 @@ CREATE TABLE `offer` (
   `ticker` varchar(255) DEFAULT NULL,
   `title` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `UK_iex7e8fs0fh89yxpcnm1orjkm` (`ticker`)
+  UNIQUE KEY `UK_iex7e8fs0fh89yxpcnm1orjkm` (`ticker`),
+  KEY `IDXq2o9psuqfuqmq59f0sq57x9uf` (`deadline`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -456,10 +440,11 @@ CREATE TABLE `request` (
   `description` varchar(255) DEFAULT NULL,
   `reward_amount` double DEFAULT NULL,
   `reward_currency` varchar(255) DEFAULT NULL,
-  `ticket` varchar(255) DEFAULT NULL,
+  `ticker` varchar(255) DEFAULT NULL,
   `title` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `UK_poov41qoyq0n88wyfx5ayajt4` (`ticket`)
+  UNIQUE KEY `UK_9mxq3powq8tqctclj0fbi2nih` (`ticker`),
+  KEY `IDXlrvsw21ylkdqa1shrkwg1yssx` (`deadline`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -500,7 +485,7 @@ CREATE TABLE `user_account` (
 
 LOCK TABLES `user_account` WRITE;
 /*!40000 ALTER TABLE `user_account` DISABLE KEYS */;
-INSERT INTO `user_account` VALUES (1,0,_binary '\0','john.doe@acme.com','John','Doe','$2a$05$4xMsvHPmBKWhaDa7m7b0gen9Aa2I7bkgcqdjnn7wPUGgRq9XMtLLa','anonymous'),(3,0,_binary '','administrator@acme.com','Administrator','Acme.com','$2a$05$nx7FsJhlmqLMbWmy0qD1YenNQj2PglA9puIP0R4Gc4bfhXrwyyPLu','administrator');
+INSERT INTO `user_account` VALUES (1,0,_binary '\0','john.doe@acme.com','John','Doe','$2a$05$qUQgs5ZZut65GUOldd4mBut1cF3M8aTlttdOFLUyhFPAdvZqsAAlG','anonymous'),(3,0,_binary '','administrator@acme.com','Administrator','Acme.com','$2a$05$HHAeRBMY2ymYNYXhihgULuqXTGebmJ1t495SoOLmEph03ReCH7O4S','administrator');
 /*!40000 ALTER TABLE `user_account` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -513,4 +498,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-11-05 22:04:46
+-- Dump completed on 2019-11-20 12:55:31
